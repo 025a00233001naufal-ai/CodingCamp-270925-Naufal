@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda - Naufal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">Logo Kita  </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="profil.html">Our Profile</a></li>
+                <li><a href="#message-us">Message Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="welcome-section">
+            <h1 id="greeting">Hi, [Nama] Welcome to Website</h1>
+            <div class="main-banner">
+                <img src="dunia.png" alt="Banner Utama" class="img-banner">
+            </div>
+        </section>
+
+        <section id="headquarter-section">
+            <h2>Our Headquarter</h2>
+            <div class="hq-container">
+                <div class="hq-item">
+                    <div class="circle"><img src="kota.jpg" class="circle" alt=""></div>
+                    <p>Jakarta</p>
+                </div>
+                <div class="hq-item">
+                    <div class="circle"><img src="kota.jpg" class="circle" alt=""></div>
+                    <p>Bandung</p>
+                </div>
+                <div class="hq-item">
+                    <div class="circle"><img src="kota.jpg" class="circle" alt=""></div>
+                    <p>Surabaya</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="message-us">
+            <h2>Message Us</h2>
+            <div class="contact-grid">
+                <div class="form-container">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                            <div class="error-message" id="name-error"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                            <div class="error-message" id="email-error"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="interest">What is your interest?</label>
+                            <select id="interest" name="interest">
+                                <option value="general">General Inquiry</option>
+                                <option value="career">Career</option>
+                                <option value="partnership">Partnership</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                            <div class="error-message" id="message-error"></div>
+                        </div>
+
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+
+                <div class="info-container">
+                    <p>Contact Us:</p>
+                    <p>Email: nopalbiasaaja17@gmail.com</p>
+                    <p>Phone: 088980819271</p>
+                    <hr>
+                    <p>Head Office:</p>
+                    <p>Ngemplak boyolali </p>
+                    <p>Boyolali, Indonesia</p>
+                </div>
+            </div>
+
+            <div id="form-output" class="output-box" style="display:none;">
+                <h3>Form Submission Result:</h3>
+                <p><strong>Name:</strong> <span id="output-name"></span></p>
+                <p><strong>Email:</strong> <span id="output-email"></span></p>
+                <p><strong>Interest:</strong> <span id="output-interest"></span></p>
+                <p><strong>Message:</strong> <span id="output-message"></span></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p> by Naufal Taufiqurrohman</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

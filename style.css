@@ -1,0 +1,324 @@
+/* RESET DASAR */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f8f8;
+}
+
+/* HEADER DAN NAVIGASI */
+header {
+    background: #4a90e2; /* Biru Cerah */
+    color: white;
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #3a75c4;
+}
+
+/* KONTEN UTAMA & SECTION */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+section {
+    margin-bottom: 25px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    padding: 25px;
+}
+
+h1, h2, h3, h4 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* -------------------------------------- */
+/* SLICING INDEX.HTML */
+/* -------------------------------------- */
+
+/* WELCOME & BANNER */
+#welcome-section {
+    text-align: center;
+    padding: 40px 20px;
+     background-image:linear-gradient(rgb(92, 184, 218),white) ;
+}
+}
+
+.img-banner {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-top: 15px;
+}
+
+/* HEADQUARTER SECTION */
+#headquarter-section {
+    text-align: center;
+    background-image:linear-gradient(rgb(92, 184, 218),white) ;
+}
+
+.hq-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.hq-item {
+    text-align: center;
+}
+
+.circle {
+    width: 80px;
+    height: 80px;
+    background-color: #42350c; /* Warna Kuning Lembut */
+    border-radius: 50%;
+    margin: 0 auto 10px;
+    border: 3px solid #3d3111;
+}
+
+/* MESSAGE US SECTION */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Dua kolom: Formulir lebih lebar */
+    gap: 30px;
+}
+}
+
+.form-group {
+    margin-bottom: 15px;
+    
+}
+}
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input, 
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    background-color: #4a90e2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #3a75c4;
+}
+
+.error-message {
+    color: #d9534f; /* Merah */
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+.info-container {
+    background: #f0f0f0;
+    padding: 20px;
+    border-radius: 6px;
+    border-left: 3px solid #4a90e2;
+}
+
+/* OUTPUT FORMULIR */
+.output-box {
+    margin-top: 30px;
+    padding: 15px;
+    border: 1px solid #4a90e2;
+    background-color: #e6f0ff;
+    border-radius: 4px;
+}
+
+/* -------------------------------------- */
+/* DESAIN HALAMAN PROFIL (profile.html) */
+/* -------------------------------------- */
+
+#profile-page {
+    padding: 0; 
+}
+
+.profile-title {
+    padding: 20px 25px;
+    background-color: rgb(79, 177, 215);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.banner-photo-container {
+    position: relative;
+    text-align: center;
+}
+
+.banner-photo {
+    width: 100%;
+    height: auto;
+    max-height: 350px;
+    object-fit: cover;
+    display: block;
+}
+
+.banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(3, 3, 3, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-overlay h2 {
+    color: white;
+    font-size: 3em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.profile-section {
+    padding: 25px;
+}
+
+.vision-mission-container {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.vision-box, .mission-box {
+    flex: 1;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.vision-box {
+    background: #d4edda; /* Hijau muda */
+    border-left: 5px solid #28a745;
+}
+
+.mission-box {
+    background: #fff3cd; /* Kuning muda */
+    border-left: 5px solid #352a09;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #333;
+    color: white;
+    margin-top: 30px;
+}
+
+
+/* -------------------------------------- */
+/* RESPONSIVITAS (Mobile-First) */
+/* -------------------------------------- */
+
+/* Ponsel (max-width: 767px) */
+@media (max-width: 767px) {
+    /* Navigasi Tumpuk */
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav .logo {
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    /* Headquarter Tumpuk */
+    .hq-container {
+        flex-direction: column;
+    }
+
+    /* Message Us Grid Tumpuk */
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .info-container {
+        margin-top: 20px;
+    }
+
+    /* Profil Tumpuk */
+    .vision-mission-container {
+        flex-direction: column;
+    }
+
+    .banner-overlay h2 {
+        font-size: 1.8em;
+        padding: 0 10px;
+    }
+}
